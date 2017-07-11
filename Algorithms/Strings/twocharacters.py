@@ -29,7 +29,6 @@ if len(chars) > 2:
                 pairs.append((chars[i], chars[j]))
     for cs in pairs:
         temp_str = "".join([x for x in s if x == cs[0] or x == cs[1]])
-        print(temp_str)
         if is_alternate(temp_str):
             maximum = max(maximum, len(temp_str))
 else:
